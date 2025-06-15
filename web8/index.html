@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourism Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top justify-content-between" style="padding:1vw 2vw;">
+      <a class="navbar-brand" href="#">
+        <span class="logo-text">Travel<span class="logo-x">X</span></span>
+      </a>
+
+      
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#book">Book</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#packages">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" id="search-icon" class="nav-link text-white">
+                <i class="bi bi-search"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" id="login-icon" class="nav-link text-white">
+                <i class="bi bi-person-circle"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Search Bar -->
+      <div id="search-bar" class="search-bar d-none">
+        <input type="text" placeholder="Search..." class="form-control" />
+        <button id="clear-button" type="button">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <!-- Login Form -->
+      <div id="login-form" class="login-form d-none">
+        <h5 style="text-align: center">LOGIN</h5>
+        <form>
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary w-100 login-btn">
+            Login Now
+          </button>
+
+          <input type="checkbox" id="remember" />
+          <label for="remember">Remember Me</label>
+
+          <p>Forget password? <a href="#">Click Here</a></p>
+          <p>Don't have and account? <a href="#">Register Now</a></p>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Video Background Section -->
+    <section id="home" class="video-background">
+      <video id="bg-video1" autoplay muted loop class="bg-video">
+        <source
+          src="videos/4662765-hd_1920_1080_25fps (1) (1).mp4"
+          type="video/mp4"
+        />
+      </video>
+      <video
+        id="bg-video2"
+        autoplay
+        muted
+        loop
+        class="bg-video"
+        style="display: none"
+      ></video>
+      <div class="overlay">
+        <div class="container">
+          <div class="row justify-content-center text-center text-white">
+            <div class="col-lg-6">
+              <h1>Welcome to Sri Lanka</h1>
+
+              <p>
+                Explore the beauty and culture of Sri Lanka. Find your perfect
+                destination!
+              </p>
+              <p>Discover amazing places with us</p>
+              <a href="#destinations" class="btn btn-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations-section">
+      <div class="container">
+        <h2 class="section-title">Explore Destinations in Sri Lanka</h2>
+        <div class="destinations-list">
+          <div class="destination-item">
+            <img src="images/ella.jpg" alt="Ella" />
+            <h3>Ella</h3>
+            <p>
+              Ella is a small town surrounded by lush green hills, offering
+              spectacular views and hiking trails, including the famous Ella
+              Rock.
+            </p>
+          </div>
+
+          <div class="destination-item">
+            <img src="images/gallefort.jpg" alt="Galle Fort" />
+            <h3>Galle Fort</h3>
+            <p>
+              Galle Fort is a historic colonial fort that showcases ancient
+              Portuguese and Dutch architecture, overlooking the beautiful
+              Indian Ocean.
+            </p>
+          </div>
+
+          <div class="destination-item">
+            <img src="images/sigiriya.jpg" alt="Sigiriya" />
+            <h3>Sigiriya</h3>
+            <p>
+              Sigiriya, also known as the Lion's Rock, is a UNESCO World
+              Heritage Site known for its ancient royal palace and stunning
+              frescoes.
+            </p>
+          </div>
+
+          <div class="destination-item">
+            <img src="images/mirissa.jpg" alt="Mirissa" />
+            <h3>Mirissa</h3>
+            <p>
+              Mirissa is a popular coastal destination, famous for its pristine
+              beaches, whale watching, and vibrant nightlife.
+            </p>
+          </div>
+
+          <div class="destination-item">
+            <img src="images/yala.jpg" alt="Yala" />
+            <h3>Yala</h3>
+            <p>
+              Yala National Park is famous for its rich wildlife, including
+              leopards, elephants, and a variety of birds, making it a top
+              destination for safari lovers.
+            </p>
+          </div>
+          <!-- Horton Plains -->
+          <div class="destination-item">
+            <img src="images/hortan.jpg" alt="Horton Plains" />
+            <h3>Horton Plains</h3>
+            <p>
+              Horton Plains National Park is a UNESCO World Heritage site, known
+              for its stunning landscapes, cloud forests, and the famous World's
+              End cliff.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us-section">
+      <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <p>
+          We are a passionate travel agency dedicated to bringing you the best
+          of Sri Lanka. From serene beaches to lush mountains, we offer
+          customized tours that immerse you in the island’s rich culture and
+          natural beauty.
+        </p>
+        <p>
+          Our experienced team is committed to providing exceptional service to
+          ensure you have a safe, memorable, and enriching experience in Sri
+          Lanka.
+        </p>
+      </div>
+    </section>
+    <!-- Book Section -->
+    <section id="book" class="book-section">
+      <div class="container">
+        <h2 class="section-title">Book Your Trip</h2>
+        <p class="section-description">
+          Fill out the form below to book your adventure in Sri Lanka!
+        </p>
+
+        <!-- Booking Form -->
+        <form id="bookingForm" class="booking-form">
+          <div class="form-group">
+            <label for="destination">Select Destination</label>
+            <select id="destination" class="form-control" required>
+              <option value="">--Choose a Destination--</option>
+              <option value="Ella">Ella</option>
+              <option value="Sigiriya">Sigiriya</option>
+              <option value="Mirissa">Mirissa</option>
+              <option value="Yala">Yala</option>
+              <option value="gallefort">Galle Fort</option>
+              <option value="Horton Plains">Horton Plains</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="date">Travel Date</label>
+            <input type="date" id="date" class="form-control" required />
+          </div>
+
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              class="form-control"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              class="form-control"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn btn-book">Book Now</button>
+        </form>
+
+        <div id="confirmationMessage" class="confirmation-message d-none">
+          <h3>Your Booking is Confirmed!</h3>
+          <p>Thank you for booking with us. We will contact you shortly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="packages" class="packages-section">
+      <div class="container">
+        <h2 class="section-title">Explore Our Packages</h2>
+        <p class="section-description">
+          Choose from a variety of exciting packages to explore the beauty of
+          Sri Lanka.
+        </p>
+
+        <div class="packages-grid">
+          <div class="package-card">
+            <img src="images/safari.jpg" alt="Safari" class="package-img" />
+            <div class="package-info">
+              <h3>Safari</h3>
+              <p>
+                Experience the wild side of Sri Lanka with our exciting safari
+                tours.
+              </p>
+              <a href="#" class="btn btn-details">Learn More</a>
+            </div>
+          </div>
+
+          <div class="package-card">
+            <img
+              src="images/adventure.jpg"
+              alt="Adventure"
+              class="package-img"
+            />
+            <div class="package-info">
+              <h3>Adventure</h3>
+              <p>
+                Unleash your inner adventurer with thrilling experiences across
+                the island.
+              </p>
+              <a href="#" class="btn btn-details">Learn More</a>
+            </div>
+          </div>
+
+          <div class="package-card">
+            <img
+              src="images/beach-relax.jpg"
+              alt="Beach Relaxation"
+              class="package-img"
+            />
+            <div class="package-info">
+              <h3>Beach Relaxation</h3>
+              <p>Relax and unwind on the pristine beaches of Sri Lanka.</p>
+              <a href="#" class="btn btn-details">Learn More</a>
+            </div>
+          </div>
+
+          <div class="package-card">
+            <img
+              src="images/culture.jpg"
+              alt="Cultural Tours"
+              class="package-img"
+            />
+            <div class="package-info">
+              <h3>Cultural Tours</h3>
+              <p>
+                Explore the rich cultural heritage and historical sites of Sri
+                Lanka.
+              </p>
+              <a href="#" class="btn btn-details">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-description">
+          We provide a wide range of services to make your travel experience
+          unforgettable.
+        </p>
+
+        <div class="services-grid">
+          <!-- Service Card -->
+          <div class="service-card">
+            <img
+              src="images/tour.jpg"
+              alt="Tour Planning"
+              class="service-img"
+            />
+            <div class="service-info">
+              <h3>Tour Planning</h3>
+              <p>
+                Customized tours to explore the beauty and culture of Sri Lanka.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <img
+              src="images/hotel.jpg"
+              alt="Hotel Booking"
+              class="service-img"
+            />
+            <div class="service-info">
+              <h3>Hotel Booking</h3>
+              <p>Comfortable accommodations tailored to your preferences.</p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <img
+              src="images/transport2.jpg"
+              alt="Transport Services"
+              class="service-img"
+            />
+            <div class="service-info">
+              <h3>Transport Services</h3>
+              <p>Convenient and safe travel options across the island.</p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <img
+              src="images/advenactivity.jpg"
+              alt="Adventure Activities"
+              class="service-img"
+            />
+            <div class="service-info">
+              <h3>Adventure Activities</h3>
+              <p>Exciting adventures like hiking, safaris, and water sports.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+
+        <!-- Message Form -->
+        <div class="contact-form">
+          <h3>Send Message</h3>
+          <form id="messageForm">
+            <div class="form-group">
+              <label for="msgName">Your Name</label>
+              <input
+                type="text"
+                id="msgName"
+                class="form-control"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="msgEmail">Your Email</label>
+              <input
+                type="email"
+                id="msgEmail"
+                class="form-control"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="msgText">Your Message</label>
+              <textarea
+                id="msgText"
+                class="form-control"
+                rows="4"
+                placeholder="Enter your message"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+          <div id="formResponse" class="response-message"></div>
+        </div>
+        <br />
+        <p class="section-description">
+          Feel free to reach out to us through the following channels:
+        </p>
+        <div class="contact-info">
+          <div class="contact-item">
+            <h3>Email</h3>
+            <p><a href="mailto:info@travelx.com">info@travelx.com</a></p>
+          </div>
+
+          <div class="contact-item">
+            <h3>Phone</h3>
+            <p><a href="tel:+94123456789">+94 123 456 789</a></p>
+          </div>
+
+          <div class="contact-item">
+            <h3>Fax</h3>
+            <p><a href="fax:+94123456789">+94 123 456 789</a></p>
+          </div>
+
+          <div class="contact-item">
+            <h3>Social Media</h3>
+            <div class="social-icons">
+              <a
+                href="https://facebook.com/travelx"
+                target="_blank"
+                class="social-icon facebook"
+              >
+                <i class="bx bxl-facebook-circle"></i> Facebook
+              </a>
+              <a
+                href="https://instagram.com/travelx"
+                target="_blank"
+                class="social-icon instagram"
+              >
+                <i class="bx bxl-instagram"></i> Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-center py-3 bg-dark text-white buttom-text">
+      <p class=" buttom-text">© 2025 Official Sri Lanka Tourism. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
