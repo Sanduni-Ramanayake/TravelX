@@ -1,0 +1,1 @@
+TravelX is a modern, responsive tourism website showcasing the beauty and adventures of Sri Lanka. Built with HTML, CSS, JavaScript, and Bootstrap, it features a video landing page, booking forms, and a user-friendly design.
